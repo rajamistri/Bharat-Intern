@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1b1f24;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 450px;
+  background: #1b1f24;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 3px rgba(19, 187, 255);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+
+.Temperature-icon {
+  font-size: 45px;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+}
+span {
+  color: #13bbff;
+}
+
+#celsius,
+#fahrenheit,
+#kelvin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input {
+  flex: 5;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #13bbff;
+  color: white;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+  padding: 0 10px;
+}
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.icon {
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 30px;
+  background: #4d5964;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+}
+
+.button {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.button button {
+  display: inline-block;
+  padding: 11px 26px;
+  background: transparent;
+  color: #13bbff;
+  border: 2px solid #13bbff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.button button:hover {
+  background: #13bbff;
+  color: #1b1f24;
+  box-shadow: 0 0 20px #13bbff;
+  transform: scale(1.1);
+}
